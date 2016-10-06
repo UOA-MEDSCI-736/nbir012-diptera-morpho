@@ -1,0 +1,42 @@
+Project Definition
+	
+	Project Name: 
+	- Geometric morphometric analysis
+
+	Vision: 
+	- To use insect wing venation to assist in the taxonomic classification of specimens
+
+	Mission: 
+	- To develop a statistical analysis of the geometry of insect wing venation to cluster insects within groups and identify outliers which may hint at new species.
+
+	Success Criteria: 
+	-Organise the data in a meaningful way
+	-Analyse the landmark coordinates on an insect wing
+	-The development of a working statistical analysis
+	-Identify morphological range of a species
+	-The automation of most of the process after the landarks have been placed
+	-Develop a morphometric analysis using python
+	-Complete the report
+	-Pass the course
+
+Team Agreement
+
+	Behaviour Agreement: 
+	- To communicate effectively, to treat everyone fairly, ask for feedback and take onboard comments, embrace change.
+
+	Communication Agreement: 
+	- Communicate via email when necessary for client. Use slack for colleagues within MedSci 736.
+	- Meet when it can’t be covered in email and have a clear scope for the meeting. Email client once a week regarding progress to date and any working software.
+	- If there are issues with the course I will contact the course coordinator or a demonstrator via slack and vice versa
+	- If there is an issue with the project I will contact Greg via email and vice versa.
+
+	Project Team:   
+	- Neil Birrell, Development Team, nbir012@aucklanduni.ac.nz 
+	- Greg Holwell, supervisor and client, g.holwell@auckland.ac.nz
+	- Fabiana Kubke, course coordinator, https://medsci7362016.slack.com/team/kubke
+	- Tanya Gray, Tutor, https://medsci7362016.slack.com/team/tanya
+	- Sanjid Rahman, Tutor, https://medsci7362016.slack.com/team/sanjid 
+	- All the other awesome tutors, IDs on Slack.
+			
+
+
