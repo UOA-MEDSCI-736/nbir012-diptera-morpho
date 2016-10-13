@@ -24,4 +24,4 @@ csv_writer(tps_array, path)
 # read csv
 # apend csv rows to new array
 # compare new csv array with tps array
-# do as a propare Python test file
+# do as a proper Python test file
