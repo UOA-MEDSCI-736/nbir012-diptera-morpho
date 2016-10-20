@@ -147,11 +147,54 @@ This file can be run through the program format_to_CSV.py which will arrange the
 
 ## Expected Output
 The expected output should look like the below but with values that are different:
-
-               Df        Pillai approx F num Df den Df    Pr(>F)    
-data$C          3       1.85017   699.75      6    340 < 2.2e-16 ***
-data$V          3       0.24953     8.08      6    340 3.601e-08 ***
-data$C:data$V   9       0.31746     3.56     18    340 1.954e-06 ***
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l">Df</th>
+    <th class="tg-yw4l">Pillai</th>
+    <th class="tg-yw4l">approx F</th>
+    <th class="tg-yw4l">num Df</th>
+    <th class="tg-yw4l">den Df</th>
+    <th class="tg-yw4l">Pr(&gt;F)</th>
+    <th class="tg-yw4l"></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">data$C</td>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l">1.85017</td>
+    <td class="tg-yw4l">699.75</td>
+    <td class="tg-yw4l">6</td>
+    <td class="tg-yw4l">340</td>
+    <td class="tg-yw4l">&lt; 2.2e-16</td>
+    <td class="tg-yw4l">***</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">data$V </td>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l">0.24953</td>
+    <td class="tg-yw4l">8.08</td>
+    <td class="tg-yw4l">6</td>
+    <td class="tg-yw4l">340</td>
+    <td class="tg-yw4l">0.000000036</td>
+    <td class="tg-yw4l">***</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">data$C:data$V</td>
+    <td class="tg-yw4l">9</td>
+    <td class="tg-yw4l">0.31746</td>
+    <td class="tg-yw4l">3.56</td>
+    <td class="tg-yw4l">18</td>
+    <td class="tg-yw4l">340</td>
+    <td class="tg-yw4l">0.000001954</td>
+    <td class="tg-yw4l">***</td>
+  </tr>
+</table>
 
 ## Known Limitations
 This software works for fly wing morphometric analysis. It may not work for other geometric morphometrics as this has not been tested for yet. 
