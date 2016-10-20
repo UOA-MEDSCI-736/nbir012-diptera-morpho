@@ -9,22 +9,110 @@ To use insect wing venation to assist in the taxonomic classification of specime
 ## Format of Input Data
 Data should be in a csv file and be composed of species, individual and relative warp scores for the landmarks you wish to analyse. An example csv data file would look like the following:
 
-Individual,Species,Landmark1,Landmark2
-1,D. bartelli,-0.0016316816,-0.0055491132
-2,D. bartelli,0.0415954087,-0.0192371831
-3,D. bartelli,0.0287000798,0.0247030366
-4,D. cheesii,0.0148330646,0.0291651741
-5,D. cheesii,0.019613929,0.0179274908
-6,D. cheesii,-0.0152091721,-0.0153577926
-7,D. dedede,-0.0008162313,0.002781127
-8,D. dedede,-0.0016463603,0.0211843285
-9,D. dedede,0.0017677592,0.0038379148
-10,D. partay,-0.0089748178,0.0024667659
-11,D. partay,0.0073749269,0.0083565268
-12,D. partay,0.0047352877,0.0006836912
-13,M. philly,0.0042193951,-0.0011717998
-14,M. philly,0.0060138367,-0.0016608882
-15,M. philly,-0.0077607068,0.0027570934
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Individual</th>
+    <th class="tg-yw4l">Species</th>
+    <th class="tg-yw4l">Landmark1</th>
+    <th class="tg-yw4l">Landmark2</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l">D. bartelli</td>
+    <td class="tg-yw4l">-0.0016316816</td>
+    <td class="tg-yw4l">-0.0055491132</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l">D. bartelli</td>
+    <td class="tg-yw4l">0.0415954087</td>
+    <td class="tg-yw4l">-0.0192371831</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l">D. bartelli</td>
+    <td class="tg-yw4l">0.0287000798</td>
+    <td class="tg-yw4l">0.0247030366</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l">D. cheesii</td>
+    <td class="tg-yw4l">0.0148330646</td>
+    <td class="tg-yw4l">0.0291651741</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">5</td>
+    <td class="tg-yw4l">D. cheesii</td>
+    <td class="tg-yw4l">0.019613929</td>
+    <td class="tg-yw4l">0.0179274908</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">6</td>
+    <td class="tg-yw4l">D. cheesii</td>
+    <td class="tg-yw4l">-0.0152091721</td>
+    <td class="tg-yw4l">-0.0153577926</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">7</td>
+    <td class="tg-yw4l">D. dedede</td>
+    <td class="tg-yw4l">-0.0008162313</td>
+    <td class="tg-yw4l">0.002781127</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">8</td>
+    <td class="tg-yw4l">D. dedede</td>
+    <td class="tg-yw4l">-0.0016463603</td>
+    <td class="tg-yw4l">0.0211843285</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">9</td>
+    <td class="tg-yw4l">D. dedede</td>
+    <td class="tg-yw4l">0.0017677592</td>
+    <td class="tg-yw4l">0.0038379148</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">10</td>
+    <td class="tg-yw4l">D. partay</td>
+    <td class="tg-yw4l">-0.0089748178</td>
+    <td class="tg-yw4l">0.0024667659</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">11</td>
+    <td class="tg-yw4l">D. partay</td>
+    <td class="tg-yw4l">0.0073749269</td>
+    <td class="tg-yw4l">0.0083565268</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">12</td>
+    <td class="tg-yw4l">D. partay</td>
+    <td class="tg-yw4l">0.0047352877</td>
+    <td class="tg-yw4l">0.0006836912</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">13</td>
+    <td class="tg-yw4l">M. philly</td>
+    <td class="tg-yw4l">0.0042193951</td>
+    <td class="tg-yw4l">-0.0011717998</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">14</td>
+    <td class="tg-yw4l">M. philly</td>
+    <td class="tg-yw4l">0.0060138367</td>
+    <td class="tg-yw4l">-0.0016608882</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">15</td>
+    <td class="tg-yw4l">M. philly</td>
+    <td class="tg-yw4l">-0.0077607068</td>
+    <td class="tg-yw4l">0.0027570934</td>
+  </tr>
+</table>
 
 Key requirements: That the information data is presented in a comma delimited csv file.
 
