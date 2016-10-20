@@ -120,7 +120,7 @@ This file can be run through the program format_to_CSV.py which will arrange the
 
 ## Instructions
 
-Fork [nbir012-diptera-morpho] (https://github.com/nbir012/nbir012-diptera-morpho) and save to your computer.
+Download [nbir012-diptera-morpho] (https://github.com/nbir012/nbir012-diptera-morpho) and save to your computer.
 
 ### Instructions With Dummy Data
 1. Within the forked project navigate to the folder named Data/
