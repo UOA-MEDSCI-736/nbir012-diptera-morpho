@@ -207,7 +207,3 @@ Zeeshan - scrum master and slave driver
 
 UoA Medsci736 teaching staff
 
-## Starwars!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sC9abcLLQpI" frameborder="0" allowfullscreen></iframe>
-
