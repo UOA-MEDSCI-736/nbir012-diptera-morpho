@@ -123,7 +123,7 @@ This file can be run through the program format_to_CSV.py which will arrange the
 Download [nbir012-diptera-morpho] (https://github.com/nbir012/nbir012-diptera-morpho) and save to your computer.
 
 ### Instructions With Dummy Data
-1. Within the forked project navigate to the folder named Data/
+1. Within the downloaded project navigate to the folder named Data/
 2. open example_data.csv
 3. Ensure data is showing as a comma delimited csv file
 4. Close data file if all is correct, or convert data to the correct format (refer to format of input data).
@@ -134,7 +134,7 @@ Download [nbir012-diptera-morpho] (https://github.com/nbir012/nbir012-diptera-mo
 9. Win! a wild manova output appeared
 
 ### Instructions with user supplied data
-1. Within the forked project navigate to the folder named Data/
+1. Within the downloaded project navigate to the folder named Data/
 2. Save your user data as a csv file (refer to format of input data)
 3. Ensure data is showing as a comma delimited csv file
 4. Close data file if all is correct, or convert data to the correct format (refer to format of input data).
