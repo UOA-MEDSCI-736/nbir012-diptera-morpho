@@ -192,10 +192,11 @@ The expected output should look like the below but with values that are differen
 </table>
 
 ## Known Limitations
-This software works for fly wing morphometric analysis. It may not work for other geometric morphometrics as this has not been tested for yet. 
+- This software works for fly wing morphometric analysis. It may not work for other geometric morphometrics as this has not been tested for yet.
+- 
 
 ## Licence
-[The Unlicence] (https://github.com/nbir012/nbir012-diptera-morpho/blob/master/Documents/Licence.txt) 
+[The Unlicence] (https://github.com/nbir012/nbir012-diptera-morpho/blob/master/Documents/Licence.txt) - applies to all code, text and data (other than the DMP template supplied by UoA)
 
 ## Contributors
 Neil Birrell - Developer
