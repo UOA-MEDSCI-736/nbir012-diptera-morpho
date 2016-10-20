@@ -9,12 +9,6 @@ To use insect wing venation to assist in the taxonomic classification of specime
 ## Format of Input Data
 Data should be in a csv file and be composed of species, individual and relative warp scores for the landmarks you wish to analyse. An example csv data file would look like the following:
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
 <table class="tg">
   <tr>
     <th class="tg-yw4l">Individual</th>
@@ -147,12 +141,7 @@ This file can be run through the program format_to_CSV.py which will arrange the
 
 ## Expected Output
 The expected output should look like the below but with values that are different:
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
+
 <table class="tg">
   <tr>
     <th class="tg-yw4l"></th>
