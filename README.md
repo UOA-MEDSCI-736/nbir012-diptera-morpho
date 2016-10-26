@@ -203,7 +203,7 @@ Neil Birrell - Developer
 
 Greg Holwell - product owner
 
-Zeeshan - scrum master and slave driver
+Zeeshan - scrum master
 
 UoA Medsci736 teaching staff
 
