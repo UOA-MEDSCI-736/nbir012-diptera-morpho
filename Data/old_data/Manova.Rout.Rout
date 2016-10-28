@@ -1,0 +1,72 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> setwd("/home/admin736/Desktop/share-git/sandbox-1/nbir012-diptera-morpho/Data/")
+> df <- read.csv("variance_data.csv", header = TRUE)
+> ## What are the column names in the dataset?
+> names(df)
+[1] "X"  "y1" "y2" "y3"
+> ## Y1 <- cbind(y1, y2, y3)
+> landmarks.manova1 <- manova ( cbind(y1, y2, y3) ~ as.factor(X), data= df)
+> summary(landmarks.manova1)
+             Df Pillai approx F num Df den Df Pr(>F)
+as.factor(X)  7 1.0792   1.2843     21     48 0.2328
+Residuals    16                                     
+> summary(landmarks.manova1, test = "Roy")
+             Df    Roy approx F num Df den Df  Pr(>F)  
+as.factor(X)  7 1.5539   3.5518      7     16 0.01695 *
+Residuals    16                                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> summary(landmarks.manova1, test = "Hotelling-Lawley")
+             Df Hotelling-Lawley approx F num Df den Df Pr(>F)
+as.factor(X)  7           2.2051   1.3301     21     38 0.2173
+Residuals    16                                               
+> summary(landmarks.manova1, test = "Pillai")
+             Df Pillai approx F num Df den Df Pr(>F)
+as.factor(X)  7 1.0792   1.2843     21     48 0.2328
+Residuals    16                                     
+> summary(landmarks.manova1, test = "Wilks")
+             Df   Wilks approx F num Df den Df Pr(>F)
+as.factor(X)  7 0.22585   1.3175     21 40.751 0.2207
+Residuals    16                                      
+> ## Look to see which differ
+> summary.aov(landmarks.manova1)
+ Response y1 :
+             Df     Sum Sq    Mean Sq F value Pr(>F)
+as.factor(X)  7 1.7696e-06 2.5280e-07  1.0246 0.4516
+Residuals    16 3.9477e-06 2.4673e-07               
+
+ Response y2 :
+             Df     Sum Sq    Mean Sq F value Pr(>F)
+as.factor(X)  7 5.7185e-07 8.1693e-08  1.4256 0.2622
+Residuals    16 9.1684e-07 5.7303e-08               
+
+ Response y3 :
+             Df     Sum Sq    Mean Sq F value Pr(>F)
+as.factor(X)  7 2.7656e-06 3.9508e-07  0.7652  0.624
+Residuals    16 8.2615e-06 5.1634e-07               
+
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  0.112   0.008   0.115 
