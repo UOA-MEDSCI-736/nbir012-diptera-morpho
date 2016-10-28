@@ -247,7 +247,7 @@ Download [nbir012-diptera-morpho] (https://github.com/nbir012/nbir012-diptera-mo
 9. A wild manova output appears at the end.
 
 ## Expected Output
-The expected output should look like the below but with values that are different:
+The expected output should look similar to the below but with values that are different:
 
 <table class="tg">
   <tr>
@@ -293,11 +293,11 @@ The expected output should look like the below but with values that are differen
 </table>
 
 ## Known Limitations
-- This software works for fly wing morphometric analysis. It may not work for other geometric morphometrics as this has not been tested for yet.
-- 
+- This software works for fly wing morphometric analysis providing there is the same number of rows and columns and title names. Currently it is hard coded however it will be made softcoded in later versions.
 
 ## Licence
 [The Unlicence] (https://github.com/nbir012/nbir012-diptera-morpho/blob/master/Documents/Licence.txt) - applies to all code and text. and data (other than the DMP template supplied by UoA)
+The data contained in the [figshare repo] (https://figshare.com/projects/nbir012-diptera-morpho/16794) contains its own licencing information. Please refer directly to this.
 
 ## Contributors
 Neil Birrell - Developer
