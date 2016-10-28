@@ -7,9 +7,11 @@ Geometric morphometric analysis
 To use insect wing venation to assist in the taxonomic classification of specimens
 
 ## Format of Input Data
-Data should be in a csv file and be composed of species, individual and relative warp scores for the landmarks you wish to analyse. 
+Data should be in a csv file and be composed of species (independent variable) and centroid values for the landmarks (dependent variables) you wish to analyse. 
 
 Please note that the species name can be in any format e.g. Genus species, G. species, species, g. species etc.
+
+The first row should contain titles for the column with column one being X and column 2, 3 and 4 being Landmark1, Landmark2, Landmark3.
 
 An example csv data file would look like the following:
 
@@ -112,38 +114,34 @@ An example csv data file would look like the following:
   </tr>
 </table>
 
-Key requirements: That the information data is presented in a comma delimited csv file.
-
-Input data will be produced by the program tpsRelw (available here: http://life.bio.sunysb.edu/morph/). This will produce a txt file which contains the relative warps for landmarks and individuals.
-
-This file can be run through the program format_to_CSV.py which will arrange the data into the correct format for the manova and will then save to csv. This csv file can then be used as the input for the Manova.R file.
+Key requirements: That the data is presented in a comma delimited csv file.
 
 ## Instructions
 
 Download [nbir012-diptera-morpho] (https://github.com/nbir012/nbir012-diptera-morpho) and save to your computer.
 
 ### Instructions With Dummy Data
-1. Within the downloaded project navigate to the folder named Data/
-2. open example_data.csv
-3. Ensure data is showing as a comma delimited csv file
+1. Within the downloaded project, navigate to the folder named Data/
+2. open normal_morpho.csv
+3. Ensure data is showing as a comma delimited csv file, there are four columns and 33 rows (including titles) and column 1 is labeled X and column 2,3 & 4 are labeled Landmark1, Landmark2 and Landmark3 
 4. Close data file if all is correct, or convert data to the correct format (refer to format of input data).
 5. Go up one folder level and navigate into Code/
-6. Open up Manova.R 
-7. In line 2 change the file name to "example_data.csv"
-8. Run code
-9. Win! a wild manova output appeared
+6. Open up morphoManova.R 
+7. Run line two of the code, a pop up will appear prompting you to select the data, navigate to the folder "Data/" in the project folder and select the normal_morpho.csv
+8. select line 3 through to 66 of the code (so these lines are all highlighted) and select run. The packages required will automatically download, the assumption tests will check the selected data and the output will present a range of statistical analyses with some annotations to help the user interpret their output.
+9. A wild manova output appears at the end.
 
 ### Instructions with user supplied data
 1. Within the downloaded project navigate to the folder named Data/
 2. Save your user data as a csv file (refer to format of input data)
-3. Ensure data is showing as a comma delimited csv file
+3. Ensure data is showing as a comma delimited csv file, there are four columns and 33 rows (including titles) and column 1 is labeled X and column 2,3 & 4 are labeled Landmark1, Landmark2 and Landmark3 
 4. Close data file if all is correct, or convert data to the correct format (refer to format of input data).
 5. Go up one folder level and navigate into Code/
-6. Open up Manova.R 
-7. In line 2 change the file name to "what_ever_your_file_is_called.csv"
-8. Adjust line 6 to contain the columns you wish to investigate. Do this by changing y1, y2, y3 to the columns you wish to the variances you wish to analyse and X to the factor you wish to explore.
+6. Open up morphoManova.R
+7. Run line two of the code, a pop up will appear prompting you to select the data, navigate to the folder "Data/" in the project folder and select your csv file
+8. select line 3 through to 66 of the code (so these lines are all highlighted) and select run. The packages required will automatically download, the assumption tests will check the selected data and the output will present a range of statistical analyses with some annotations to help the user interpret their output.
 8. Run code
-9. Win! a wild manova output appeared
+9. A wild manova output appears at the end.
 
 ## Expected Output
 The expected output should look like the below but with values that are different:
@@ -196,7 +194,7 @@ The expected output should look like the below but with values that are differen
 - 
 
 ## Licence
-[The Unlicence] (https://github.com/nbir012/nbir012-diptera-morpho/blob/master/Documents/Licence.txt) - applies to all code, text and data (other than the DMP template supplied by UoA)
+[The Unlicence] (https://github.com/nbir012/nbir012-diptera-morpho/blob/master/Documents/Licence.txt) - applies to all code and text. and data (other than the DMP template supplied by UoA)
 
 ## Contributors
 Neil Birrell - Developer
