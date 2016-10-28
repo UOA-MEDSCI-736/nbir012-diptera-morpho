@@ -5,6 +5,47 @@ morpho.df$Landmark1 <- as.numeric(morpho.df$Landmark1)
 morpho.df$Landmark2 <- as.numeric(morpho.df$Landmark2)
 morpho.df$Landmark3<- as.numeric(morpho.df$Landmark3)
 
+#assumption 1 -- check normality (linearity)
+library(mvnormtest)
+data.mat<- as.matrix(morpho.df)
+C <- t(morpho.df[1:32,2:4])
+mshapiro.test(C)
+# normal-ish but central limit theorem applies
+
+#assumption 2 -- check equality of covariance matrices
+library(vegan)
+dist.mat <- dist(morpho.df)
+betadisper(dist.mat, group=as.factor(morpho.df$X))
+
+dist.mat <- dist(u)
+betadisper(dist.mat, group=as.factor(u[,1]))
+
+# Manova script
+morphoManova <- function(manova.df){
+  #defining n as the total number of columns in the dataframe
+  n <- ((ncol(morpho.df)))
+  #subsetting out the first column as a factor (the independent variables)
+  X <- as.factor(morpho.df[,1])
+  #opening up a for loop which takes numeric values from column 2 through to n and 
+  # assigns it to 'data'
+  for(data in 2:n){
+    morpho.df[,data] <- as.numeric(morpho.df[,data])
+  }
+  # assigns values in the data frame to a matrix from columns 2 to n 
+  # and then assigns it to the term dep.mat (dependents matrix)
+  dep.mat <- as.matrix(df[,2:n])
+  
+  # assigns the manova command to the name landmarks.manova1 and tests 
+  # the dependents matrix against the independent column (X)
+  landmarks.manova1 <- manova(dep.mat ~ X) 
+  # produces a summary of analysis of variance of the MANOVA command.
+  summary.aov(landmarks.manova1)}
+
+
+#creating the function morphoManova
+#u is the data frame with the first column 
+#being the dependant variable in factor form
+#proceeding columns are numeric independent variables.
 morphoManova <- function(u) 
 {
   # Multivariate normality of data assumption test
@@ -59,8 +100,16 @@ morphoManova <- function(u)
   landmarks.manova <- manova(dep.mat ~ X) 
   # produces a summary of analysis of variance of the MANOVA command.
   print(summary.aov(landmarks.manova))
-  cat("\n The summary of MANOVA results will show the following; The F values in the summary by dependent variables also shows an F value which can indicate which depenent variable is having an effect (it would be a larger value than he other F values) \n \nYou may get a warning message stating 'In dist(u) : NAs introduced by coercion' however this can be ignored")
-  
+  cat("\n The summary of MANOVA results will show the propbability of  \n \n you may get a warning message stating 'In dist(u) : NAs introduced by coercion' however this can be ignored")
+
 }
 
 morphoManova(morpho.df)
+
+
+
+
+#morphoManova which runs a MANOVA on the data
+morphoManova <- manova ( cbind(Landmark1, Landmark2, Landmark3) ~ as.factor(X), data= morpho.df)
+summary(morphoManova)
+summary.aov(morphoManova)
