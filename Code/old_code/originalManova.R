@@ -6,16 +6,9 @@ morpho.df <- read.csv(file.choose(), header=T)
 morpho.df <- morpho.df[,1:n]
 #df <- read.csv(file.choose(), header=T) 
 #several assumptions must be met for a MANOVA. We test them below.
-#assumption 1 -- check normality (linearity)
-library(mvnormtest)
-data.mat<- as.matrix(morpho.df)
-C <- t(morpho.df[1:n,1:n])
-#R <- t(diff(t(log(C))))
-mshapiro.test(R)
-#assumption 2 -- check equality of covariance matrices
-library(vegan)
-dist.mat <- dist(as.numeric(as.matrix(morpho.df)))
-betadisper(dist.mat, group=as.factor(morpho.df$X))
+
+
+
 #assumption 3 -- absence of multicollinearity
 library(biotools)
 
