@@ -15,102 +15,205 @@ The first row should contain titles for the column with column one being X and c
 
 An example csv data file would look like the following:
 
+</style>
 <table class="tg">
   <tr>
-    <th class="tg-yw4l">Individual</th>
-    <th class="tg-yw4l">Species</th>
+    <th class="tg-yw4l">X</th>
     <th class="tg-yw4l">Landmark1</th>
     <th class="tg-yw4l">Landmark2</th>
+    <th class="tg-yw4l">Landmark3</th>
   </tr>
   <tr>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">D. bartelli</td>
-    <td class="tg-yw4l">-0.0016316816</td>
-    <td class="tg-yw4l">-0.0055491132</td>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">76.7</td>
+    <td class="tg-yw4l">29.5</td>
+    <td class="tg-yw4l">7.5</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">2</td>
-    <td class="tg-yw4l">D. bartelli</td>
-    <td class="tg-yw4l">0.0415954087</td>
-    <td class="tg-yw4l">-0.0192371831</td>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">60.5</td>
+    <td class="tg-yw4l">32.1</td>
+    <td class="tg-yw4l">6.3</td>
   </tr>
   <tr>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">40.7</td>
+    <td class="tg-yw4l">4.2</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">88.1</td>
+    <td class="tg-yw4l">45.1</td>
+    <td class="tg-yw4l">4.9</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">50.2</td>
+    <td class="tg-yw4l">34.1</td>
+    <td class="tg-yw4l">11.7</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">55</td>
+    <td class="tg-yw4l">31.1</td>
+    <td class="tg-yw4l">6.9</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">65.4</td>
+    <td class="tg-yw4l">21.6</td>
+    <td class="tg-yw4l">4.3</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. bartletti</td>
+    <td class="tg-yw4l">65.7</td>
+    <td class="tg-yw4l">27.7</td>
+    <td class="tg-yw4l">5.3</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">67.3</td>
+    <td class="tg-yw4l">48.3</td>
+    <td class="tg-yw4l">5.5</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">61.3</td>
+    <td class="tg-yw4l">28.9</td>
+    <td class="tg-yw4l">6.9</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">58.2</td>
+    <td class="tg-yw4l">42.5</td>
+    <td class="tg-yw4l">4.8</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">76.9</td>
+    <td class="tg-yw4l">20.4</td>
     <td class="tg-yw4l">3</td>
-    <td class="tg-yw4l">D. bartelli</td>
-    <td class="tg-yw4l">0.0287000798</td>
-    <td class="tg-yw4l">0.0247030366</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">D. cheesii</td>
-    <td class="tg-yw4l">0.0148330646</td>
-    <td class="tg-yw4l">0.0291651741</td>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">66.9</td>
+    <td class="tg-yw4l">23.9</td>
+    <td class="tg-yw4l">1.1</td>
   </tr>
   <tr>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">55.4</td>
+    <td class="tg-yw4l">29.1</td>
     <td class="tg-yw4l">5</td>
-    <td class="tg-yw4l">D. cheesii</td>
-    <td class="tg-yw4l">0.019613929</td>
-    <td class="tg-yw4l">0.0179274908</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">6</td>
-    <td class="tg-yw4l">D. cheesii</td>
-    <td class="tg-yw4l">-0.0152091721</td>
-    <td class="tg-yw4l">-0.0153577926</td>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">50.5</td>
+    <td class="tg-yw4l">18</td>
+    <td class="tg-yw4l">4.8</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-yw4l">D. dedede</td>
-    <td class="tg-yw4l">-0.0008162313</td>
-    <td class="tg-yw4l">0.002781127</td>
+    <td class="tg-yw4l">D. costa</td>
+    <td class="tg-yw4l">64.1</td>
+    <td class="tg-yw4l">14.5</td>
+    <td class="tg-yw4l">3.7</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">8</td>
-    <td class="tg-yw4l">D. dedede</td>
-    <td class="tg-yw4l">-0.0016463603</td>
-    <td class="tg-yw4l">0.0211843285</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">62.8</td>
+    <td class="tg-yw4l">25.9</td>
+    <td class="tg-yw4l">2.9</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">9</td>
-    <td class="tg-yw4l">D. dedede</td>
-    <td class="tg-yw4l">0.0017677592</td>
-    <td class="tg-yw4l">0.0038379148</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">45</td>
+    <td class="tg-yw4l">15.9</td>
+    <td class="tg-yw4l">1.2</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">10</td>
-    <td class="tg-yw4l">D. partay</td>
-    <td class="tg-yw4l">-0.0089748178</td>
-    <td class="tg-yw4l">0.0024667659</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">47.8</td>
+    <td class="tg-yw4l">36.1</td>
+    <td class="tg-yw4l">4.1</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">11</td>
-    <td class="tg-yw4l">D. partay</td>
-    <td class="tg-yw4l">0.0073749269</td>
-    <td class="tg-yw4l">0.0083565268</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">75.6</td>
+    <td class="tg-yw4l">27.7</td>
+    <td class="tg-yw4l">6.3</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">12</td>
-    <td class="tg-yw4l">D. partay</td>
-    <td class="tg-yw4l">0.0047352877</td>
-    <td class="tg-yw4l">0.0006836912</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">46.6</td>
+    <td class="tg-yw4l">46.9</td>
+    <td class="tg-yw4l">3.6</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">13</td>
-    <td class="tg-yw4l">M. philly</td>
-    <td class="tg-yw4l">0.0042193951</td>
-    <td class="tg-yw4l">-0.0011717998</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">50.6</td>
+    <td class="tg-yw4l">29.7</td>
+    <td class="tg-yw4l">4.7</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">14</td>
-    <td class="tg-yw4l">M. philly</td>
-    <td class="tg-yw4l">0.0060138367</td>
-    <td class="tg-yw4l">-0.0016608882</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">45.7</td>
+    <td class="tg-yw4l">27.6</td>
+    <td class="tg-yw4l">6.2</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">15</td>
-    <td class="tg-yw4l">M. philly</td>
-    <td class="tg-yw4l">-0.0077607068</td>
-    <td class="tg-yw4l">0.0027570934</td>
+    <td class="tg-yw4l">D. maui</td>
+    <td class="tg-yw4l">68.4</td>
+    <td class="tg-yw4l">35.3</td>
+    <td class="tg-yw4l">1.9</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">52.5</td>
+    <td class="tg-yw4l">39</td>
+    <td class="tg-yw4l">3.1</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">80</td>
+    <td class="tg-yw4l">54.2</td>
+    <td class="tg-yw4l">4</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">54.7</td>
+    <td class="tg-yw4l">32.1</td>
+    <td class="tg-yw4l">5.7</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">63.5</td>
+    <td class="tg-yw4l">25.6</td>
+    <td class="tg-yw4l">3</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">46.3</td>
+    <td class="tg-yw4l">31.8</td>
+    <td class="tg-yw4l">7.4</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">61.5</td>
+    <td class="tg-yw4l">16.8</td>
+    <td class="tg-yw4l">1.9</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">62.9</td>
+    <td class="tg-yw4l">25.8</td>
+    <td class="tg-yw4l">2.4</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">D. corsa</td>
+    <td class="tg-yw4l">49.3</td>
+    <td class="tg-yw4l">39.4</td>
+    <td class="tg-yw4l">5.2</td>
   </tr>
 </table>
 
